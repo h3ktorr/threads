@@ -80,6 +80,49 @@
   color: #e5e5e5;
 }
 
+/* Communities */
+.community-card {
+  width: 100%;
+  border-radius: 0.5rem;
+  /* rounded-lg -> 8px */
+  background-color: #1f2937;
+  /* assuming bg-dark-3 is dark grayish */
+  padding-left: 1rem;
+  /* px-4 -> 16px */
+  padding-right: 1rem;
+  padding-top: 1.25rem;
+  /* py-5 -> 20px */
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 640px) {
+
+  /* sm:w-96 */
+  .community-card {
+    width: 24rem;
+    /* 384px */
+  }
+}
+
+.community-card_btn {
+  border-radius: 0.5rem;
+  /* rounded-lg -> 8px */
+  background-color: #3b82f6;
+  /* assuming bg-primary-500 -> blue-500 */
+  padding-left: 1.25rem;
+  /* px-5 -> 20px */
+  padding-right: 1.25rem;
+  padding-top: 0.375rem;
+  /* py-1.5 -> 6px */
+  padding-bottom: 0.375rem;
+  font-size: 0.875rem;
+  /* text-small-regular usually means small font, around 14px */
+  font-weight: 400;
+  /* regular */
+  color: #f9fafb !important;
+  /* !text-light-1 assumed to be a very light color */
+}
+
 @layer components {
 
   /* main */
@@ -103,13 +146,13 @@
   }
 
   /* Community Card */
-  .community-card {
+  /* .community-card {
     @apply w-full rounded-lg bg-dark-3 px-4 py-5 sm:w-96;
   }
 
   .community-card_btn {
     @apply rounded-lg bg-primary-500 px-5 py-1.5 text-small-regular !text-light-1;
-  }
+  } */
 
   /* thread card  */
   .thread-card_bar {
